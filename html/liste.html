@@ -1,0 +1,23 @@
+<div class="w3-container">
+	<div class="w3-responsive">
+		<div class="w3-row w3-section">
+			<div class="w3-col" style="width:50px"><i class="w3-xxlarge fa fa-search"></i></div>
+			<div class="w3-rest">
+				<input class="w3-input w3-border w3-padding" type="text" oninput="w3.filterHTML('#myTable', '.item', this.value)" placeholder="Votre recherche ...">
+			</div>
+		</div>
+		<table  id="myTable" class="w3-table-all">
+			<tr>
+				<th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(1)')">Nom <i class="fa fa-sort"></i></th>
+				<th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(2)')">Pr&eacute;noms <i class="fa fa-sort"></i></th>
+				<th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(3)')">Email <i class="fa fa-sort"></i></th>
+				<th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(4)')">Age <i class="fa fa-sort"></i></th>
+				<th>Categorie</th>
+				<th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(6)')">Date inscription <i class="fa fa-sort"></i></th>
+				<th>Profil</th>
+				$admin
+			</tr>
+$table_elements
+		</table>
+	</div>
+</div>
